@@ -47,7 +47,7 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
         <input
           type="button"
           className="btn btn-info btn-close"
-          value="✖"
+          value="X"
           onClick={close}
         />
         <h3>Add your expends here</h3>
