@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Question from "./components/Question";
 import Form from "./components/Form";
 import List from "./components/List";
