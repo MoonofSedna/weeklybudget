@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Question from "./components/Question";
 import Form from "./components/Form";
 import List from "./components/List";
 import ControlBudget from "./components/ControlBudget";
+import imagen from './img/img.png';
 
 function App() {
 
@@ -56,8 +56,11 @@ function App() {
   return (
     <div className="container">
       <header>
+        <div className="row">
+        <img className="img-fluid" src={imagen} />
+        </div>
         <h1>Weekly budget</h1>
-        <div className="main-content content">
+        <div className="main-content content col-md-10 m-auto">
           {showquestion ? (
             <Question
               savebudget={savebudget}
@@ -76,11 +79,8 @@ function App() {
                     remaining={remaining}
                   />
                 </div>
-
-
                 <div className="col-md-6">
                   <List expends={expends} deletebudget={deletebudget} />
-
                   <ControlBudget budget={budget} remaining={remaining} />
                 </div>
 

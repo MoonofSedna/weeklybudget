@@ -42,11 +42,12 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
   };
 
   return (
-    <Fragment>
+    <Fragment className="content">
+      
       <form onSubmit={addAmount}>
-        <input
+      <input
           type="button"
-          className="btn btn-info btn-close"
+          className="btn btn-info btn-close mr-1"
           value="X"
           onClick={close}
         />
@@ -59,7 +60,7 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
 
           <input
             type="text"
-            className="col-md-12"
+            className="col-md-12 form-control"
             placeholder="Exm. food"
             value={name}
             onChange={e => saveName(e.target.value)}
@@ -70,14 +71,14 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
           <label> Amount of the expense </label>
           <input
             type="number"
-            className="col-md-12"
+            className="col-md-12  form-control"
             placeholder="Exm. 300"
             value={amount}
             onChange={e => saveAmount(parseInt(e.target.value, 10))}
           />
         </div>
 
-        <input type="submit" className="btn btn-info btn-block mb-4" value="Add" />
+        <input type="submit" className="btn btn-t btn-block mb-4" value="Add" />
       </form>
     </Fragment>
   );
