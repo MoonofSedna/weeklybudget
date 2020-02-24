@@ -55,7 +55,7 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
           <Error message="All fields are required. Enter a correct amount." />
         ) : null}
         <div className="camp">
-          <label> Expense </label>
+          <label className="mt-1"> Expense </label>
 
           <input
             type="text"
