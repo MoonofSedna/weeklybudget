@@ -44,18 +44,20 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
   return (
     <Fragment>
       <form onSubmit={addAmount}>
-      <input
-          type="button"
-          className="btn btn-info btn-close mr-1"
-          value="X"
-          onClick={close}
-        />
-        <h3>Add your expends here</h3>
+        <div className="mb-2">
+          <input
+            type="button"
+            className="btn btn-info btn-close mr-1"
+            value="X"
+            onClick={close}
+          />
+          <h3>Add your expends here</h3>
+        </div>
         {error ? (
           <Error message="All fields are required. Enter a correct amount." />
         ) : null}
         <div className="camp">
-          <label className="mt-1"> Expense </label>
+          <label> Expense </label>
 
           <input
             type="text"

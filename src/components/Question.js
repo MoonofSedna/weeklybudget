@@ -26,11 +26,10 @@ import Error from './Error';
             updateQuestion(false);
         }
 
-
         return(
 
             <Fragment>
-            <h2>What is your budget?</h2>
+            <h2 className="mb-2">What is your budget?</h2>
             {error
             ? <Error message="An error has occured. Please enter a valid amount."/>
             :null}
