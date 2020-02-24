@@ -81,8 +81,8 @@ h3 {
   font-weight: bold;
 }
 
-.content{
-  padding: 2rem;
+.content-t{
+  padding: 5rem! important;
 }
 
 .error {

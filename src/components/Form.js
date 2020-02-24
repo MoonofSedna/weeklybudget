@@ -42,8 +42,7 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
   };
 
   return (
-    <Fragment className="content">
-      
+    <Fragment>
       <form onSubmit={addAmount}>
       <input
           type="button"

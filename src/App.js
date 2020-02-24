@@ -68,7 +68,7 @@ function App() {
               updateQuestion={updateQuestion}
             />
           ) : (
-            <div className="row">
+            <div className="row pl-4 pr-4">
 
                 <div className="col-md-6">
                   <Form
