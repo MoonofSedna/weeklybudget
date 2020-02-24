@@ -47,7 +47,7 @@ import Error from './Error';
                         <div className="form-group">
                             <input
                                 type ="submit"
-                                className="btn btn-t btn-block"
+                                className="btn btn-info btn-block"
                                 value="Send"
                             />
                         </div>

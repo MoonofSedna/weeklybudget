@@ -165,20 +165,9 @@ label{
   color: white;
 }
 
-.btn-t{
-  font-family: "Ramabhadra", sans-serif;
-  color: white;
-  background-color: rgb(58, 158, 175);
-}
-
-.btn-t:hover{
-  color: white;
-  background-color: rgb(10, 110, 128);;
-}
-
 .btn-close {
   float: left;
-  padding: 8px;
+  padding: 10px;
   font-size: 12px;
   color: white;
 }

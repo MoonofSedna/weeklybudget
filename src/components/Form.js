@@ -78,7 +78,7 @@ const Form = ({ saveExpend, saveCreateExpend, close }) => {
           />
         </div>
 
-        <input type="submit" className="btn btn-t btn-block mb-4" value="Add" />
+        <input type="submit" className="btn btn-info btn-block mb-4" value="Add" />
       </form>
     </Fragment>
   );
